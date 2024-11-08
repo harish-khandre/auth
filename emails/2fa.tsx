@@ -12,14 +12,14 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface BreeditTFACodeEmailProps {
+interface authTFACodeEmailProps {
   token?: string;
 }
 
-export const TwoFA = ({ token }: BreeditTFACodeEmailProps) => (
+export const TwoFA = ({ token }: authTFACodeEmailProps) => (
   <Html>
     <Head />
-    <Preview>Your 2FA code for Breedit</Preview>
+    <Preview>Your 2FA code for auth</Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
@@ -29,15 +29,15 @@ export const TwoFA = ({ token }: BreeditTFACodeEmailProps) => (
           alt="Linear"
           style={logo}
         />
-        <Heading style={heading}>Your 2FA code for Breedit</Heading>
+        <Heading style={heading}>Your 2FA code for auth</Heading>
         <Text style={paragraph}>
           This link and code will only be valid for the next 15 minutes. If the
           link does not work, you can use the login verification code directly:
         </Text>
         <code style={code}>{token}</code>
         <Hr style={hr} />
-        <Link href="https://breedit.co.in" style={reportLink}>
-          Breedit
+        <Link href="https://auth.co.in" style={reportLink}>
+          auth
         </Link>
       </Container>
     </Body>

@@ -47,15 +47,15 @@ const ResetPasswordEmail = ({ url }: ResetPasswordEmailProps) => (
           src="https://imgur.com/hgn8JNF.png"
           width="50"
           height="50"
-          alt="Breedit's Logo"
+          alt="auth's Logo"
         />
         <Text style={footer}>
           <Link
-            href="https://breedit.co.in"
+            href="https://auth.co.in"
             target="_blank"
             style={{ ...link, color: "#898989" }}
           >
-            Breedit.co.in
+            auth.co.in
           </Link>
           , the all-in-one-pet platform
           <br />
